@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-backgd{
+    position: relative;
+    width: 100%;
+}
+
+.overlay-backgd__img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay-backgd__hover__img{
+    width: 100%;
+    height: auto;
+}
+
