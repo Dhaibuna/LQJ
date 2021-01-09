@@ -9,48 +9,41 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     cursor: url(/img/Cursor.svg), auto;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
 }
 
-p{
-  color: #FFFFEB;
-  font-size: 30px;
-  font-weight: bold;
+
+header{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
 }
 
 .main-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display : grid; 
+  grid-template-columns: repeat(12,fr);
+   
+}
+
+#header__phrase{
+  grid-column: 3/12 ;
+  text-align: center;
+  padding-top: 90px;
+}
+
+#header__phrase p{
+  color: #FFFFEB;
+  font-size: 35px;
+  font-weight: bolder;
 }
 
 /* Logo */
 
-    #main-logo{
-    width: 200px;
-    animation-name: pulsed-logo ;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse;
-   
+#header__logo{
+  height : 120px; 
+  padding: 50px 0 0 50px;
+
 }
+   
 
-/* Animations */
-
-@keyframes pulsed-logo{
-    0% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(1.5) ;
-        opacity: 1;
-      }
-
-      100% {
-        transform: scale(1);
-      }
-
-    }
