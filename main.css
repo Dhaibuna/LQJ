@@ -8,6 +8,7 @@ body{
     background-image: url(./img/l-p_intro.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     cursor: url(/img/Cursor.svg), auto;
 }
 
